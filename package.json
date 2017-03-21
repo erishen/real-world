@@ -28,8 +28,8 @@
     "build": "react-scripts build",
     "eject": "react-scripts eject",
     "test": "react-scripts test",
-    "mvBuild": "mv build real-world && cp -R real-world erishen.github.io && mv real-world build",
+    "mvBuild": "mv build real-world && cp -R real-world github && mv real-world build",
     "predeploy": "npm run build",
-    "deploy": "npm run mvBuild && gh-pages -d erishen.github.io -r git@github.com:erishen/erishen.github.io.git -b master -a"
+    "deploy": "npm run mvBuild && gh-pages -d github -r git@github.com:erishen/erishen.github.io.git -b master -a"
   }
 }
