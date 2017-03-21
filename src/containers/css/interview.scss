@@ -2,3 +2,46 @@
     border: 1px solid green;
     padding: 10px;
 }
+
+#demo {
+    width: 0;
+    height: 0;
+    border-width: 20px;
+    border-style: solid;
+    border-color: transparent transparent red transparent;
+}
+
+#top_div {
+    margin-top: 10px;
+    width: 100%;
+    height: 50px;
+    border: 1px solid red;
+}
+
+#bottom_left_div {
+    float: left;
+    width: 50%;
+    height: 50px;
+    border: 1px solid red;
+}
+
+#bottom_right_div {
+    float: left;
+    width: 50%;
+    height: 50px;
+    border: 1px solid red;
+}
+
+#bottom_clear_div {
+    clear: both;
+}
+
+#middle_div {
+    position: absolute;
+    width:500px;
+    height:300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid pink;
+}
