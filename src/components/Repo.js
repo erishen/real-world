@@ -8,11 +8,11 @@ const Repo = ({ repo, owner }) => {
   return (
     <div className="Repo">
       <h3>
-        <Link to={`/${login}/${name}`}>
+        <Link to={`/real-world/${login}/${name}`}>
           {name}
         </Link>
         {' by '}
-        <Link to={`/${login}`}>
+        <Link to={`/real-world/${login}`}>
           {login}
         </Link>
       </h3>

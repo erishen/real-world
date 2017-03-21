@@ -20,7 +20,7 @@ class App extends Component {
   }
 
   handleChange = nextValue => {
-    browserHistory.push(`/${nextValue}`)
+    browserHistory.push(`/real-world/${nextValue}`)
   }
 
   renderErrorMessage() {
@@ -57,7 +57,7 @@ class App extends Component {
 
 const mapStateToProps = (state, ownProps) => ({
   errorMessage: state.errorMessage,
-  inputValue: ownProps.location.pathname.substring(1)
+  inputValue: ownProps.location.pathname.substring('/real-world/'.length)
 })
 
 export default connect(mapStateToProps, {
