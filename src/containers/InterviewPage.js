@@ -1,5 +1,6 @@
-import React, { Component, PropTypes } from 'react'
+import React, { Component } from 'react'
 import { connect } from 'react-redux'
+import './css/interview.css'
 
 class InterviewPage extends Component {
     static propTypes = {
@@ -7,7 +8,11 @@ class InterviewPage extends Component {
     }
 
     render() {
-        return (<button className="btn btn-warning" type="submit">Button</button>);
+        return (
+            <div id="interview_div">
+                <button className="btn btn-warning" type="submit">Button</button>
+            </div>
+        );
     }
 }
 
